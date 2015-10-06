@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html ng-app="html">
+
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Write with no text limit on Twitter - By @codehate</title>
+</head>
+
+<body>
+    <div id="land">
+        <div class="container">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <center>
+                    <h1 class="banner">Write More!</h1>
+                    <h3 class="subbanner">With no text limit on Twitter.</h3>
+                    <div class="getstarted">
+                        <a href="#try"><i class="fa fa-6 fa-chevron-down"></i></a>
+                    </div>
+                </center>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <center>
+                    <blockquote class="twitter-tweet" lang="en">
+                        <p lang="und" dir="ltr">Via <a href="https://twitter.com/hashtag/Write?src=hash">#Write</a> - <a href="http://t.co/3P5B1ofOij">http://t.co/3P5B1ofOij</a> <a href="http://t.co/wCjZHo4AOA">pic.twitter.com/wCjZHo4AOA</a></p>&mdash; Anand Sudhanaboina (@codehate) <a href="https://twitter.com/codehate/status/651446622438555648">October 6, 2015</a></blockquote>
+                    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </center>
+            </div>
+        </div>
+    </div>
+    <div class="container" ng-controller="app" id="try">
+        <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        Start writing.
+                    </div>
+                    <div class="panel-body">
+                        <input type="text" class="form-control" ng-model="heading" placeholder="Title of story (optional)">
+                        <br/>
+                        <textarea class="form-control" ng-model="tweetText" placeholder="Story (optional)"></textarea>
+                        <br/>
+                        <input type="text" class="form-control" ng-model="signature" placeholder="Sign off (optional)">
+                        <br/>
+                        <button type="button" class="btn btn-primary" ng-click="download()">Download</button>
+                        <button type="button" class="btn btn-primary" ng-disabled="true">Twitter</button>
+                        <p class="coming-soon">*Direct post to Twitter coming soon.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        Preview
+                    </div>
+                    <div class="panel-body">
+                        <div id="tweet">
+                            <p ng-bind="heading" class="heading"></p>
+                            <p class="tweet-text" ng-bind="tweetText"></p>
+                            <br/>
+                            <p class="signature" ng-bind="signature"></p>
+                            <!-- I have no objection if you remove this element :) -->
+                            <p class="credits">via - Write App (codehate.github.io/write)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2014-11-29/FileSaver.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

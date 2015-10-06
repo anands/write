@@ -1,0 +1,105 @@
+body {
+    background: #5b2a7c;
+}
+
+#tweet {
+    max-width: 595px;
+    padding: 15px;
+    word-break: break-word;
+    background-color: #fff;
+}
+
+.heading {
+    font-size: 20px;
+    color: #5b2a7c;
+}
+
+.tweet-text {
+    color: #3d464d;
+}
+
+.signature {
+    color: #aaa;
+}
+
+.credits {
+    color: #aaa;
+}
+
+#land {
+    height: 100vh;
+    padding-top: 10%;
+}
+
+#try {
+    height: 100vh;
+    padding-top: 10%;
+}
+
+.banner {
+    font-size: 35px;
+    color: #fff;
+}
+
+.subbanner {
+    color: #aaa;
+}
+
+.fa-6 {
+    font-size: 17em;
+}
+
+.getstarted i {
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    color: #fff;
+}
+
+.getstarted i:hover {
+    cursor: pointer;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    color: #aaa;
+}
+
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+.form-control {
+    border: none;
+    border-bottom: 1px solid #eee;
+    background: none;
+    box-shadow: none;
+}
+
+.form-control:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.panel {
+    border: none!important;
+    background: none!important;
+    box-shadow: none!important;
+}
+
+.panel-default > .panel-heading {
+    color: #fff;
+    border: none;
+    background: none!important;
+}
+
+input, textarea {
+    color: #fff!important;
+}
+
+.coming-soon {
+    font-size: 12px;
+    margin-top: 10px;
+    color: #aaa;
+}
